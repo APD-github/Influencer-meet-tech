@@ -1,0 +1,222 @@
+/* =======
+variables
+======= */
+:root{
+    /* Font Family */
+    --ff-primary: Cabinet Grotesk;
+    /* --ff-secondary: ; */
+    /* primary colors */
+    --clr-primary-purple: hsl(272, 100%, 46%);
+    --clr-primary-white: hsl(0, 0%, 100%);
+    --clr-primary-black: hsl(0, 0%, 0%);
+    --clr-primary-yellow:hsl(40, 100%, 48%);
+    /* Pink colors */
+    --clr-primary-pink: hsl(298, 100%, 88%);
+    /* grey colors color */
+    --clr-primary-grey: hsl(18, 36%, 95%);
+    --clr-header-grey: hsl(21, 43%, 56%);
+    /* Dark grey */
+    --clr-dark-grey: hsl(195, 24%, 93%);
+    /* Light Grey */
+    --clr-light-grey: hsl(272, 89%, 96%);
+    --clr-dark-grey: hsl(195, 24%, 93%);
+    /* Border grey */
+    --clr-border-grey: hsl(0, 0%, 20%);
+    /* darkend green */
+    --clr-darkend-green:hsl(195, 60%, 37%);
+    /* transition */
+    --transition: all .3s linear;
+}
+
+/* ======================
+    General syles
+====================== */
+body{
+    color: var(--clr-primary-black);
+    font-family: var(--ff-primary);
+}
+.action-btn{
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.rsv-ct{
+    padding: 2.4rem 12.8rem;
+}
+/* Responsiveness Media query */
+@media (width <= 1080px){
+.rsv-ct{
+    padding: 2.4rem 5rem;
+}
+}
+@media (width <= 867px){
+.rsv-ct{
+    padding: 2.4rem 1.8rem;
+}
+}
+@media (width <= 400px){
+.rsv-ct{
+    padding: 2.4rem 1rem;
+}
+}
+@media (width <= 317px){
+.rsv-ct{
+    padding: 2.4rem .7rem;
+}
+}
+/* ===================================
+Loader Animation
+=================================== */
+.loader{
+    background: var(--clr-primary-purple);
+    bottom: 0;
+    display: grid;
+    height: 100%;
+    overflow: hidden;
+    place-content: center;
+    position: fixed;
+    top: 0;
+    transition: all 1s ease;
+    width: 100%;
+    z-index: 10;
+}
+.remove-loader{
+    top: -100vh;
+}
+.balls{
+    height: 35px;
+    position: relative;
+    width: 35px;
+    z-index: 1;
+}
+.balls::before,
+.balls::after{
+    animation: load 1s infinite cubic-bezier(0.77, 0, 0.175, 1);
+    border-radius: 50%;
+    content: '';
+    height: inherit;
+    mix-blend-mode: multiply;
+    position: absolute;
+    width: inherit;
+}
+.balls::before{
+    background: var(--clr-light-grey);
+}
+.balls::after{
+    animation-delay: .5s;
+    background: var(--clr-primary-yellow);
+}
+.remove-ball{
+    opacity: 0;
+    transition: .1s;
+}
+@keyframes load{
+    0%, 100%{
+        right: -45px;
+    }
+    25%{
+        transform: scale(.3);
+    }
+    50%{
+        right: 0;
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+/* Media Query for loader animation */
+@media (width >= 768px){
+.balls{
+    height: 50px;
+    width: 50px;
+} 
+}
+/* ========================================= 
+NavBar
+========================================= */
+.nav{
+   align-items: center;
+   height: 9.6rem;
+   justify-content: space-between; 
+   width: 100%;
+}
+.nav-lists{
+  font-size: 1.6rem;
+  gap: 6rem;  
+  text-transform: uppercase;
+  align-items: center;
+}
+.sub-lists{
+    gap: 4rem;
+}
+.toggle-bar{
+    display: none;
+}
+/* Mobile View */
+@media (width <= 768px){
+.nav-lists{
+  font-size: 1.9rem;
+  gap: 4rem;
+}
+.sub-lists{
+    align-items: center;
+    background: var(--clr-primary-purple);
+    bottom: 0;
+    color: var(--clr-primary-white);
+    flex-direction: column;
+    height: 0;
+    justify-content: center;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: var(--transition);
+    width: 100%;
+}
+/* Toggle Bar */
+.toggle-bar{
+    animation: bounce 1s infinite;
+    cursor: pointer;
+    display: block;
+    height: 40px;
+    width: 35px;
+    z-index: 10;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.line{
+    background: var(--clr-primary-purple);
+    border-radius: 5px;
+    height: 2px;
+    margin: 10px 0;
+    width: 100%;
+    transition: all .3s ease;
+}
+.nav-active .line1{
+    position: relative;
+    transform: rotate(135deg);
+}
+.nav-active .line2{
+    opacity: 0;
+}
+.nav-active .line3{
+    transform: rotate(-135deg);
+    margin-top: -2.4rem;
+}
+.nav-active .sub-lists{
+    height: 100%;
+}
+.nav-active .line{
+    background: var(--clr-primary-white);
+}
+}
+/* Bounce Animation */
+/* @keyframes bounce{
+    0%{
+        transform: scale(.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+} */

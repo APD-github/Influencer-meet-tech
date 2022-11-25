@@ -1,0 +1,76 @@
+/* =======
+    Fonts 
+======= */
+@import url('https://fonts.cdnfonts.com/css/cabinet-grotesk');
+
+/* =======
+General styles
+======= */
+*,
+::after,
+::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    /* 10PX = 1REM */
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+}
+body::-webkit-scrollbar{
+    /* display: none; */
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+li{
+    cursor: pointer;
+}
+.flx{
+    display: flex;
+}
+.grd{
+    display: grid;
+}
+.tt-upc{
+    text-transform: uppercase;
+}
+/* Headings */
+h1{
+    font-size: 5rem;
+}
+h2{
+    font-size: rem;
+}
+h3{
+    font-size: rem;
+}
+h4{
+    font-size: rem;
+}
+p{
+    font-size: rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    text-transform: capitalize;
+}
+/* Media queries for utilities */
+@media (width >= 768px){
+    
+}
+@media (width >= 1200px){
+    
+}

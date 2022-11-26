@@ -44,7 +44,7 @@ li{
 }
 /* Headings */
 h1{
-    font-size: 5rem;
+    font-size: 4.5rem;
 }
 h2{
     font-size: rem;
@@ -53,7 +53,7 @@ h3{
     font-size: rem;
 }
 h4{
-    font-size: rem;
+    font-size: 1.8rem;
 }
 p{
     font-size: rem;
@@ -65,12 +65,43 @@ h3,
 h4,
 h5,
 h6{
-    text-transform: capitalize;
+    color: rem;
 }
 /* Media queries for utilities */
 @media (width >= 768px){
-    
+/* General styles */
+
+/* Typographies */
+h1{
+    font-size: 6rem;
 }
-@media (width >= 1200px){
-    
+h2{
+    font-size: rem;
+}
+h3{
+    font-size: rem;
+}
+h4{
+    font-size: 2.2rem;
+}
+p{
+    font-size: rem;
+}    
+}
+@media (width >= 1301px){
+h1{
+    font-size: 8rem;
+}
+h2{
+    font-size: rem;
+}
+h3{
+    font-size: rem;
+}
+h4{
+    font-size: 2.4rem;
+}
+p{
+    font-size: rem;
+}  
 }

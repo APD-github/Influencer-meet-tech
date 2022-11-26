@@ -14,7 +14,9 @@
     <link 
         rel="shortcut icon" href="" type="image/x-icon" />
     <!-- Material Icon -->
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- Font awesome Icon -->
+    <script src="https://kit.fontawesome.com/8af7e0a9b9.js" crossorigin="anonymous"></script>
     <!-- Javascript -->
     <script src="./javascript/index.js" defer></script>
     <!-- Links to new tab -->
@@ -25,25 +27,25 @@
     <!-- ===========================================
         Loader Animation
      =========================================== -->
-    <div class="loader">
+    <!-- <div class="loader">
         <span class="balls"></span>
-    </div>
+    </div> -->
     <!-- ============================================
         NavBar
      ============================================ -->
     <nav class="nav flx rsv-ct">
         <div class="logo">
-            <img src="./images/logo1.svg" alt="">
+        
         </div>
 
         <div class="nav-lists flx">
             <ul class="sub-lists flx">
-                <li class="list">About</li>
-                <li class="list">Speaker</li>
-                <li class="list">organizers</li>
-                <li class="list">Sponsors</li>
+                <a href="#"><li class="list">About</li></a>
+                <a href="#"><li class="list">Speaker</li></a>
+                <a href="#"><li class="list">organizers</li></a>
+                <a href="#"><li class="list">Sponsors</li></a>
             </ul>
-            <a href="#" class="action-btn">Buy ticket</a>
+            <a href="#" class="nav-tct action-btn">Buy ticket</a>
             <button class="toggle-bar">
                 <div class="line line1"></div>
                 <div class="line line2"></div>
@@ -52,7 +54,46 @@
         </div>
     </nav>
 
-    <h1 class="tt-upc">Influencers Tech</h1>
+    <!-- ====================================== 
+    About
+     ====================================== -->
+    <article id="abt-us" class="rsv-ct">
+        <div class="container-abt grd">
+            <div class="txt-subtitles">
+                <h4 class="pTxt-clrd tt-upc">Human-centered community</h4>
+                <h1>We are <br><span class="pTxt-clrd underlined">Designers</span></h1>
+            </div>
+            <div class="ctx-abt">
+                <p>A community of Influencers and Tech Personalities forging a stage where the continent's brightest minds meet new patners, and the sharpest innovators to share their visions.</p>
+    
+                <div class="ctx-footer">
+                    <div class="icon">
+                        <a href="#">
+                            <img src="images/logo2.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="ctx-icons">
+                        <a href="#" class="container-icon">
+                            <span class="hr-efct"></span>
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="container-icon">
+                            <span class="hr-efct"></span>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="container-icon">
+                            <span class="hr-efct"></span>
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#" class="container-icon">
+                            <span class="hr-efct"></span>
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
 <!-- ====================================================== -->
 </body>
 </html>

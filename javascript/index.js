@@ -16,3 +16,10 @@ toggleBar.addEventListener('click', (e) => {
     let item = e.currentTarget.parentElement;
     item.classList.toggle('nav-active');
 });
+// NavBar Onscroll
+const navbar = document.querySelector('.nav');
+const logo = document.querySelector('.logo');
+window.addEventListener('scroll', () => {
+    navbar.classList.toggle('onscroll', scrollY > 0);
+    logo.classList.toggle('onscroll');
+});

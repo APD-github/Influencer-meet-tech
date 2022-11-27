@@ -178,8 +178,9 @@ NavBar
    justify-content: space-between; 
    position: sticky;
    top: 0;
-   transition: var(--transition);
+   transition: .2s ease;
    width: 100%;
+   z-index: 12;
 }
 .nav > .logo{
     background-repeat: no-repeat;

@@ -42,6 +42,9 @@ li{
 .tt-upc{
     text-transform: uppercase;
 }
+img{
+    user-select: none;
+}
 /* Headings */
 h1{
     font-size: 4.5rem;

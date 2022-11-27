@@ -44,6 +44,22 @@ body::-webkit-scrollbar{
 .action-btn{
     text-transform: uppercase;
     font-weight: bolder;
+    color: var(--clr-primary-purple);
+}
+.material-symbols-outlined {
+    position: absolute;
+    margin-top: -.33rem;
+    padding: 0 .5rem 0 .1rem;
+    transform: rotate(-55deg);
+    transition: var(--transition);
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 100,
+  'GRAD' -25,
+  'opsz' 48
+}
+.action-btn:hover .material-symbols-outlined{
+    padding: 0 .5rem 0 .6rem;
 }
 .rsv-ct{
     padding: 2.4rem 12.8rem;
@@ -54,6 +70,21 @@ body::-webkit-scrollbar{
 .underlined{
     text-decoration: underline;
 }
+/* General styles media queries */
+@media (width >= 1820px){
+body{
+    display: grid;
+    place-content: center;
+}
+}
+@media (width <= 768px){
+.action-btn{
+    padding-top: 1rem;
+}
+.material-symbols-outlined {
+    margin-top: -.5rem;
+}
+}
 /* Responsiveness Media query */
 @media (width <= 1080px){
 .rsv-ct{
@@ -62,7 +93,7 @@ body::-webkit-scrollbar{
 }
 @media (width <= 867px){
 .rsv-ct{
-    padding: 2.4rem 1.8rem;
+    padding: 2.4rem 3rem;
 }
 }
 @media (width <= 400px){
@@ -193,7 +224,7 @@ NavBar
 /* Mobile View */
 @media (width <= 768px){
 .nav-lists{
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   gap: 4rem;
 }
 .sub-lists{
@@ -296,7 +327,7 @@ About
     justify-content: space-between;
 }
 .ctx-abt > p{
-    line-height: 4.5rem;
+    line-height: 180%;
     font-size: 3rem;
 }
 /* Ctx-abt footer Icons */
@@ -351,14 +382,6 @@ About
 }
 }
 @media (width <= 768px){
-/* .container-icon,
-.hr-efct{
-    width: 3rem;
-}
-.container-icon > i{
-    height: 3rem;
-    padding: .5rem .5rem .5rem .6rem;
-} */
 .ctx-icons{
     font-size: 2rem;
     gap: 1rem;
@@ -373,13 +396,11 @@ About
     padding: 7rem 3rem;
 }
 .ctx-abt > p{
-    line-height: 4.5rem;
     font-size: 2.5rem;
 }    
 }
 @media (width <= 1100px){
 .ctx-abt > p{
-    line-height: 4.5rem;
     font-size: 2.3rem;
 }    
 }
@@ -398,7 +419,123 @@ About
     padding: 7rem 2rem;
 }
 .ctx-abt > p{
-    line-height: 4.4rem;
     font-size: 2.5rem;
+}
+}
+
+
+
+/* =========================================
+Sponsors
+=========================================  */
+.sponsors{
+    width: 100%;
+    height: fit-content;
+}
+.container-sponsors{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.sponsors-headline > h1{
+    font-size: 6.4rem;
+    line-height: 120%;
+}
+.sponsors-headline > p{
+    font-size: 2.4rem;
+    line-height: 180%;
+    padding: 3rem 0 2rem 0;
+}
+.sponsor-actBtn{
+    font-size: 2.3rem;
+    line-height: 120%;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+/* Logo's Container */
+.container-logos{
+    display: grid;
+    gap: 2rem;
+    padding-left: 10rem;
+    grid-template-columns: repeat(3, 1fr);
+    max-height: 100vh;
+    overflow: auto;
+}
+.container-logos::-webkit-scrollbar{
+    display: none;
+}
+.sponsor-logo{
+    border: 1px solid hsl(0, 0%, 20%);
+    border-radius: 1px;
+    display: grid;
+    place-content: center;
+    height: 17.6rem;
+}
+/* You sponsor grid box */
+.you-sponsor{
+    border-color: var(--clr-primary-purple);
+    color: var(--clr-primary-purple);
+}
+/* Media query for Sponsors */
+@media (width <= 1180px){
+.container-logos{
+    gap: 1rem;
+    padding-left: 2rem;
+}
+}
+@media (width <= 1121px){
+.container-logos{
+    padding-left: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+/* Media query Tablets */
+@media (width <= 938px){
+.sponsors-headline > h1{
+    font-size: 5.5rem;
+}
+.sponsors-headline > p{
+    font-size: 2.3rem;
+    padding: 2.3rem 0 1.5rem 0;
+}
+.sponsor-actBtn{
+    font-size: 2.2rem;
+}
+.container-sponsors{
+    gap: 5rem 0;
+    grid-template-columns: 1fr;
+}
+.container-logos{
+    padding-left: 0;
+    grid-template-columns: repeat(3, 1fr);
+}
+}
+/* Medi query Mobiles */
+@media (width <= 524px){
+.container-logos{
+    grid-template-columns: repeat(3, 1fr);
+    height: 28.14rem;
+}
+.sponsor-logo{
+    height: 6rem;
+}
+.sponsor-logo > img{
+    width: 8rem;
+    height: 2.14rem;
+}
+.you-sponsor > h4{
+    font-size: 1.8rem;
+}
+}
+@media (width <= 295px){
+.container-logos{
+    grid-template-columns: repeat(2, 1fr);
+    height: 28.14rem;
+}
+.sponsor-logo > img{
+    width: 8rem;
+    height: 2.14rem;
+}
+.you-sponsor > h4{
+    font-size: 1.8rem;
 }
 }

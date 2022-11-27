@@ -46,20 +46,16 @@ body::-webkit-scrollbar{
     font-weight: bolder;
     color: var(--clr-primary-purple);
 }
-.material-symbols-outlined {
+.arrow-up {
     position: absolute;
-    margin-top: -.33rem;
-    padding: 0 .5rem 0 .1rem;
-    transform: rotate(-55deg);
+    margin-bottom: -.33rem;
+    padding: 0 .5rem 0 .5rem;
+    transform: rotate(40deg);
     transition: var(--transition);
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 100,
-  'GRAD' -25,
-  'opsz' 48
 }
-.action-btn:hover .material-symbols-outlined{
-    padding: 0 .5rem 0 .6rem;
+.action-btn:hover .arrow-up{
+    margin-left: .33rem;
+    margin-top: -.33rem;
 }
 .rsv-ct{
     padding: 2.4rem 12.8rem;
@@ -180,25 +176,25 @@ NavBar
    align-items: center;
    height: 9.6rem;
    justify-content: space-between; 
-   width: 100%;
    position: sticky;
    top: 0;
    transition: var(--transition);
+   width: 100%;
 }
 .nav > .logo{
-    height: 2.4rem;
-    width: 11.1rem;
     background-repeat: no-repeat;
     background: url(/images/logo1.svg);
+    height: 2.4rem;
+    width: 11.1rem;
 }
 .onscroll .logo{
     background: url(/images/logo2.svg);
 }
 .nav-lists{
+  align-items: center;
   font-size: 1.6rem;
   gap: 6rem;  
   text-transform: uppercase;
-  align-items: center;
 }
 .sub-lists{
     gap: 4rem;
@@ -209,8 +205,8 @@ NavBar
 /* Nav Onscroll */
 .onscroll.nav{
     background: var(--clr-primary-purple);
-    height: 8rem;
     box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.191);
+    height: 8rem;
 }
 .onscroll .sub-lists a > li{
     color: var(--clr-primary-white);
@@ -246,22 +242,22 @@ NavBar
 /* Toggle Bar */
 .toggle-bar{
     animation: bounce 1s infinite;
+    background: transparent;
+    border: 0;
     cursor: pointer;
     display: block;
     height: 40px;
+    outline: none;
     width: 35px;
     z-index: 10;
-    border: 0;
-    outline: none;
-    background: transparent;
 }
 .line{
     background: var(--clr-primary-purple);
     border-radius: 5px;
     height: 2px;
     margin: 10px 0;
-    width: 100%;
     transition: all .3s ease;
+    width: 100%;
 }
 .nav-active .line1{
     position: relative;
@@ -271,8 +267,8 @@ NavBar
     opacity: 0;
 }
 .nav-active .line3{
-    transform: rotate(-135deg);
     margin-top: -2.4rem;
+    transform: rotate(-135deg);
 }
 .nav-active .sub-lists{
     height: 100%;
@@ -295,73 +291,73 @@ NavBar
 About
 ============================================== */
 #abt-us{
-    width: 100%;
     height: fit-content;
+    width: 100%;
 }
 .container-abt{
-    margin: 4.5rem 0;
     grid-template-columns: repeat(2, 1fr);
+    margin: 4.5rem 0;
 }
 .txt-subtitles,
 .ctx-abt{
     height: 53rem;
 }
 .txt-subtitles{
+    align-items: center;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border: 2px solid #7D00EB;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-evenly;
-    border: 2px solid #7D00EB;
     text-align: center;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
 }
 .ctx-abt{
     background: var(--clr-primary-purple);
-    color: var(--clr-primary-white);
-    border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    padding: 7rem 5rem;
+    border-top-right-radius: 5px;
+    color: var(--clr-primary-white);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 7rem 5rem;
 }
 .ctx-abt > p{
-    line-height: 180%;
     font-size: 3rem;
+    line-height: 180%;
 }
 /* Ctx-abt footer Icons */
 .ctx-footer{
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 .container-icon,
 .hr-efct{
-    cursor: pointer;
-    width: 5rem;
     border-radius: 50%;
     color: var(--clr-primary-white);
+    cursor: pointer;
+    width: 5rem;
 }
 .container-icon > i{
     height: 5rem;
     padding: 1rem;
-    transition: var(--transition);
     position: relative;
+    transition: var(--transition);
 }
 .container-icon > .hr-efct{
     background: var(--clr-bghover-color);
-    position: absolute;
     height: 0;
+    position: absolute;
     transition: .3s ease;
 }
 .container-icon:hover > .hr-efct{
     height: 5rem;
 }
 .ctx-icons{
+    display: flex;
     font-size: 3rem;
     gap: 2rem;
-    display: flex;
 }
 /* Icon media quert */
 @media (width <= 1201px){
@@ -414,8 +410,8 @@ About
     border-top-right-radius: 5px;
 }
 .ctx-abt{
-    border-top-right-radius: 0px;
     border-bottom-left-radius: 5px;
+    border-top-right-radius: 0px;
     padding: 7rem 2rem;
 }
 .ctx-abt > p{
@@ -423,14 +419,18 @@ About
 }
 }
 
+/* ===========================================
+Organizer
+=========================================== */
+
 
 
 /* =========================================
 Sponsors
 =========================================  */
 .sponsors{
-    width: 100%;
     height: fit-content;
+    width: 100%;
 }
 .container-sponsors{
     display: grid;
@@ -449,26 +449,25 @@ Sponsors
     font-size: 2.3rem;
     line-height: 120%;
     text-transform: capitalize;
-    text-decoration: underline;
 }
 /* Logo's Container */
 .container-logos{
     display: grid;
     gap: 2rem;
-    padding-left: 10rem;
     grid-template-columns: repeat(3, 1fr);
     max-height: 100vh;
     overflow: auto;
+    padding-left: 10rem;
 }
 .container-logos::-webkit-scrollbar{
     display: none;
 }
 .sponsor-logo{
-    border: 1px solid hsl(0, 0%, 20%);
     border-radius: 1px;
+    border: 1px solid hsl(0, 0%, 20%);
     display: grid;
-    place-content: center;
     height: 17.6rem;
+    place-content: center;
 }
 /* You sponsor grid box */
 .you-sponsor{
@@ -484,8 +483,8 @@ Sponsors
 }
 @media (width <= 1121px){
 .container-logos{
-    padding-left: 1rem;
     grid-template-columns: repeat(2, 1fr);
+    padding-left: 1rem;
 }
 }
 /* Media query Tablets */
@@ -505,8 +504,8 @@ Sponsors
     grid-template-columns: 1fr;
 }
 .container-logos{
-    padding-left: 0;
     grid-template-columns: repeat(3, 1fr);
+    padding-left: 0;
 }
 }
 /* Medi query Mobiles */
@@ -519,8 +518,8 @@ Sponsors
     height: 6rem;
 }
 .sponsor-logo > img{
-    width: 8rem;
     height: 2.14rem;
+    width: 8rem;
 }
 .you-sponsor > h4{
     font-size: 1.8rem;
@@ -532,8 +531,8 @@ Sponsors
     height: 28.14rem;
 }
 .sponsor-logo > img{
-    width: 8rem;
     height: 2.14rem;
+    width: 8rem;
 }
 .you-sponsor > h4{
     font-size: 1.8rem;

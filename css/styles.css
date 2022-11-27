@@ -178,7 +178,7 @@ NavBar
    justify-content: space-between; 
    position: sticky;
    top: 0;
-   transition: .2s ease;
+   transition: var(--transition);
    width: 100%;
    z-index: 12;
 }

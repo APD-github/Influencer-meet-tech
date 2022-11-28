@@ -575,9 +575,9 @@ Organizer
 }
 /* Mobile large screen */
 @media (width <= 768px){
-.organizers{
+/* .organizers{
     height: 100vh;
-}
+} */
 .orgz-container{
     grid-template-columns: 1fr;
     gap: 5rem 0;
@@ -588,9 +588,9 @@ Organizer
     width: 100%;
     background: none;
 }
-.orgz-hdtx > img{
-    position: absolute;
-    /* margin-left: 0%; */
+.orgz-hdtx img{
+    margin-left: 23rem;
+    margin-top: -3rem;
 }
 /* action btns media query */
 .orgz-btn{
@@ -608,7 +608,7 @@ Organizer
     padding: 3rem 1rem;
     position: absolute;
     left: 0;
-    transform: translateY(37%);
+    transform: translateY(30%);
     margin-bottom: 3rem;
     padding: 2.4rem 3rem;
 }
@@ -625,6 +625,11 @@ Organizer
 }
 }
 /* Media query for action btn */
+@media (width <= 768px){
+.orgz-btn{
+    margin-top: 40rem;
+}
+}
 @media (width <= 488px){
 .orgz-btn{
     margin-top: 48rem;

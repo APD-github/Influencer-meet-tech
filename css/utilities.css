@@ -48,6 +48,17 @@ img{
 img{
     -webkit-user-drag: none;
 }
+img.hidden-img{
+    display: none;
+}
+@media (width <= 768px){
+.show-img{
+    display: none;
+}
+img.hidden-img{
+    display: block;
+}    
+}
 /* Headings */
 h1{
     font-size: 4.5rem;

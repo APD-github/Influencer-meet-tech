@@ -45,15 +45,23 @@ li{
 img{
     user-select: none;
 }
+img{
+    -webkit-user-drag: none;
+}
 /* Headings */
 h1{
     font-size: 4.5rem;
 }
 h2{
-    font-size: rem;
+    font-size: 3.2rem;
+    line-height: 120%;
+    text-transform: capitalize;
 }
 h3{
-    font-size: rem;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 120%;
+    text-transform: capitalize;
 }
 h4{
     font-size: 1.8rem;
@@ -79,10 +87,10 @@ h1{
     font-size: 6rem;
 }
 h2{
-    font-size: rem;
+    font-size: 4rem;
 }
 h3{
-    font-size: rem;
+    font-size: 3rem;
 }
 h4{
     font-size: 2.2rem;
@@ -96,10 +104,10 @@ h1{
     font-size: 8rem;
 }
 h2{
-    font-size: rem;
+    font-size: 5.5rem;
 }
 h3{
-    font-size: rem;
+    font-size: 4.2rem;
 }
 h4{
     font-size: 2.4rem;

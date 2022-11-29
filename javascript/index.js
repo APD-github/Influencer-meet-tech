@@ -11,7 +11,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // NavBar 
 const toggleBar = document.querySelector('.toggle-bar');
-
 toggleBar.addEventListener('click', (e) => {
     let item = e.currentTarget.parentElement;
     item.classList.toggle('nav-active');

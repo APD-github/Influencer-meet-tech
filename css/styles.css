@@ -695,12 +695,12 @@ Organizer
 /* Media query for action btn */
 @media (width <= 768px){
 .orgz-btn{
-    margin-top: 40rem;
+    margin-top: 42rem;
 }
 }
 @media (width <= 517px){
 .orgz-btn{
-    margin-top: 49rem;
+    margin-top: 51rem;
 }
 }
 @media (width <= 319px){

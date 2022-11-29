@@ -703,9 +703,9 @@ Organizer
     margin-top: 51rem;
 }
 }
-@media (width <= 319px){
+@media (width <= 320px){
 .orgz-btn{
-    margin-top: 47rem;
+    margin-top: 50rem;
 }
 }
 @media (width <= 280px){

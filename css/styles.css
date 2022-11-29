@@ -603,7 +603,7 @@ Organizer
 /* Adding bg to orgz-ctx */
 .orgz-ctx{
     background-color: var(--clr-dark-grey);
-    height: fit-content;
+    height: 38.4rem;
     width: 100%;
     padding: 3rem 1rem;
     position: absolute;
@@ -613,7 +613,36 @@ Organizer
     padding: 2.4rem 3rem;
 }
 }
+/* *orgz BTN2 Smaller screens  */
+@media (width <= 400px){
+.orgz-btn2{
+    font-size: 1.5rem;
+}
+}
+@media (width <= 340px){
+.orgz-btn2{
+    font-size: 1rem;
+}
+}
+@media (width <= 312px){
+.orgz-btn2 .arrow-up{
+    display: none;
+}
+}
+/* Orgz mobile arrow down btn */
+@media (width <= 316px){
+.orgz-hdtx img{
+    margin-left: 18rem;
+    margin-top: -1rem;
+}
+}
 /* bg to orgz-ctx media query */
+@media (width <= 516px){
+.orgz-ctx{
+    padding: 2.4rem 2rem;
+    height: 45rem;
+}
+}
 @media (width <= 400px){
 .orgz-ctx{
     padding: 2.4rem 1rem;
@@ -624,38 +653,33 @@ Organizer
     padding: 2.4rem .7rem;
 }
 }
+@media (width <= 280px){
+.orgz-ctx{
+    height: 49rem;
+    padding: 2.4rem .7rem;
+}
+}
 /* Media query for action btn */
 @media (width <= 768px){
 .orgz-btn{
     margin-top: 40rem;
 }
 }
-@media (width <= 488px){
+@media (width <= 517px){
 .orgz-btn{
-    margin-top: 48rem;
+    margin-top: 49rem;
 }
 }
-@media (width <= 474px){
+@media (width <= 319px){
 .orgz-btn{
-    margin-top: 51rem;
+    margin-top: 47rem;
 }
 }
-@media (width <= 385px){
+@media (width <= 280px){
 .orgz-btn{
-    margin-top: 55rem;
+    margin-top: 52rem;
 }
 }
-@media (width <= 320px){
-.orgz-btn{
-    margin-top: 58rem;
-}
-}
-@media (width <= 285px){
-.orgz-btn{
-    margin-top: 62rem;
-}
-}
-
 /* =========================================
 Sponsors
 =========================================  */

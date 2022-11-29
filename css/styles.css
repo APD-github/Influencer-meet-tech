@@ -250,7 +250,6 @@ NavBar
 }
 /* Toggle Bar */
 .toggle-bar{
-    /* animation: bounce 1s infinite; */
     background: transparent;
     border: 0;
     cursor: pointer;
@@ -312,15 +311,6 @@ NavBar
     }
     100%{
         opacity: 1;
-    }
-}
-/* Bounce Animation */
-@keyframes bounce{
-    0%{
-        transform: scale(.5);
-    }
-    100%{
-        transform: scale(1);
     }
 }
 

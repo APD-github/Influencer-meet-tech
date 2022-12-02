@@ -234,7 +234,9 @@ NavBar
 }
 .sub-lists{
     align-items: center;
-    background: var(--clr-primary-purple);
+    background: 
+    linear-gradient(hsl(272, 100%, 46%),hsl(272, 79%, 61%))
+    ;
     bottom: 0;
     color: var(--clr-primary-white);
     flex-direction: column;
@@ -263,7 +265,6 @@ NavBar
 .sub-lists a > li{
     font-size: 2.5rem;
     text-transform: capitalize;
-    /* !To REVISIT! */
     letter-spacing: 1px;
     color: var(--clr-primary-white);
     line-height: 2rem;
@@ -824,5 +825,181 @@ Sponsors
 }
 .you-sponsor > h4{
     font-size: 1.8rem;
+}
+}
+
+/* ====================================
+Footer
+====================================== */
+.footer-sct{
+    width: 100%;
+    height: 58.4rem;
+    padding: 2rem 0;
+    background: var(--clr-primary-grey);
+}
+.rows-container{
+    place-content: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+.row1-fter,
+.row3-fter{
+    justify-content: space-between;
+}
+.row1-fter,
+.row2-fter,
+.row3-fter{
+    height: 100%;
+}
+/* Footer typography */
+/* Row 1 */
+.row1-fter > h4{
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    padding-bottom: 2rem;
+}
+.row1-fter > a{
+    font-size: 4rem;
+    text-decoration: underline;
+    line-height: 200%;
+}
+/* Row 2 */
+.row2-fter > h3{
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+.row2-fter > ul{
+    padding: 3rem 0;
+}
+.row2-fter > ul a{
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 320%;
+    color: var(--clr-primary-black);
+}
+/* Row 3 */
+.row3-container h3{
+    font-size: 3.5rem;
+    font-weight: 700;
+    padding-bottom: 3rem;
+}
+.fter-tpArrow{
+    background-color: transparent;
+    outline: none;
+    border: 0;
+}
+.fter-tpArrow i{
+    color: var(--clr-primary-purple);
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all .3s ;
+    animation: jump 1s cubic-bezier(0,0,.58,1.64) infinite;
+}
+/* Jump animation */
+@keyframes jump{
+    0%{
+        translate: 0 0;
+    }
+    100%{
+        translate: 0 -2rem;
+    }
+}
+.row3-fter p{
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 200%;
+    padding-top: 4rem;
+}
+.footer-footer{
+    justify-content: space-between;
+    align-items: flex-end;
+}
+/* Footer Icons */
+.scI-cRighter .ctx-icons{
+    justify-content: flex-end;
+    padding-bottom: 2rem;
+}
+.row3-fter p{
+    padding-bottom: 2rem;
+}
+.ft-i > i{
+    color: var(--clr-primary-purple);
+}
+.ft-i > i:hover{
+    color: var(--clr-primary-white);
+}
+.copyright{
+    font-size: 2rem;
+    line-height: 200%;
+    font-weight: 500;
+}
+/* Footer Media query */
+@media (width < 957px){
+.rows-container{
+    gap: 3rem 0;
+}
+/* Footer Mobile Typography */
+/* Row 1 */
+.row1-fter > h4{
+    font-size: 1.8rem;
+    padding-bottom: 2rem;
+}
+.row1-fter > a{
+    font-size: 2.5rem;
+    line-height: 4.8rem;
+}
+/* Row 2 */
+.row2-fter > h3{
+    font-size: 3rem;
+}
+.row2-fter > ul{
+    padding: 1rem 0;
+}
+.row2-fter > ul a{
+    font-size: 1.5rem;
+    line-height: 300%;
+}
+/* Row 3 */
+.row3-container h3{
+    font-size: 3rem;
+}
+.fter-tpArrow{
+    background-color: transparent;
+    outline: none;
+    border: 0;
+}
+.fter-tpArrow i{
+    font-size: 2.8rem;
+    /* position: fixed;
+    bottom: 15rem; */
+    right: 1rem;
+}
+.row3-fter p{
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 200%;
+    padding-top: 1.8rem;
+}
+@media (width <= 454px){
+.copyright{
+    font-size: 1.6rem;
+    text-align: center;
+}
+}
+/* ================= */
+.footer-footer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.scI-cRighter .ctx-icons{
+    justify-content: flex-start;
+    padding-top: 2rem;
+}
+.footer-sct{
+    height: fit-content;
+}
+.rows-container{
+    grid-template-columns: repeat(1, 1fr);
 }
 }

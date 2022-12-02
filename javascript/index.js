@@ -22,3 +22,9 @@ window.addEventListener('scroll', () => {
     navbar.classList.toggle('onscroll', scrollY > 0);
     logo.classList.toggle('onscroll');
 });
+
+// Jump to Top
+let jumpBtn = document.querySelector('.jump-btn');
+jumpBtn.addEventListener('click', () => {
+    console.log(document.body)
+});

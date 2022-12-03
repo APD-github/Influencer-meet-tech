@@ -542,7 +542,7 @@ Speakers
 .cards-ctx{
     width: 100%;
 }
-.crd-hd:hover .overlay{
+.cards-slider > .card:hover .overlay{
     height: 34.4rem;
 }
 .crd-hd > .overlay{
@@ -575,7 +575,7 @@ Speakers
     margin: 2rem 0 0 2rem;
     text-transform: uppercase;
     box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.103);
-    -webkit-user-select: none;
+    user-select: none;
 } 
 .crd-hd{
     padding: 2rem 0;
@@ -1019,20 +1019,183 @@ Sponsors
 }
 }
 
+
+/* ====================================
+Convinced!
+====================================== */
+.convinced{
+    width: 100%;
+}
+.ctx-convinced{
+    width: 100%;
+}
+.ctx-convinced > h1,
+.ctx-convinced > h4{
+    text-align: center;
+}
+.ctx-convinced > h1{
+    font-size: 6.7rem;
+    font-style: normal;
+    line-height: 130%;
+}
+.ctx-convinced > h4{
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 180%;
+    padding-bottom: 6.7rem;
+}
+.price-cards{
+    gap: 3rem;
+    grid-template-columns: repeat(2, 1fr);
+    place-content: center;
+}
+.card1{
+    background: var(--clr-light-grey);
+    border-top: 3px solid #7D00EB;
+}
+.card2{
+    background: var(--clr-dark-grey);
+    border-top: 3px solid #267A96;
+}
+.card{
+    border-radius: 3px;
+    height: 66.2rem;
+    padding: 3.5rem 5rem;
+}
+.card > h3{
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 120%;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
+.card > h2{
+    font-size: 6.4rem;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: capitalize;
+}
+.card1 > h2{
+    color: var(--clr-primary-purple);
+}
+.card2 > h2{
+    color: var(--clr-darkend-green);
+}
+.card ul{
+    color: var(--clr-primary-black);
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+}
+.card2 ul > span i{
+    color: var(--clr-darkend-green);
+}
+.card1 ul > span i{
+    color: var(--clr-primary-purple);
+}
+.card ul > span{
+    align-items: center;
+    gap: 1rem;
+}
+.card > ul li{
+    font-size: 2rem;
+    line-height: 260%;
+}
+.crd-btn{
+    font-size: 2rem;
+    letter-spacing: 1px;
+    line-height: 120%;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.card2 .crd-btn{
+    color: var(--clr-darkend-green);
+}
+/* Convinced media query */
+@media (width <= 994px){
+.card{
+    height: 60rem;
+    padding: 3rem 2rem;
+}
+.ctx-convinced > h1{
+    font-size: 4.5rem;
+}
+.ctx-convinced > h4{
+    font-size: 2.3rem;
+    line-height: 180%;
+    padding-bottom: 5rem;
+}
+.card > h3{
+    font-size: 3.7rem;
+}
+.card > h2{
+    font-size: 3.5rem;
+}
+.card ul{
+    padding-bottom: 2rem;
+}
+.card > ul li{
+    font-size: 1.9rem;
+}
+.crd-btn{
+    font-size: 2.2rem;
+}
+}
+@media (width <= 768px){
+.ctx-convinced > h1{
+    font-size: 3.5rem;
+}
+.ctx-convinced > h4{
+    font-size: 1.9rem;
+    line-height: 180%;
+    padding-bottom: 5rem;
+}
+.price-cards{
+    grid-template-columns: repeat(1, 1fr);
+}
+.card{
+    height: 57.5rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+.card > h3,
+.card > h2{
+    text-align: center;
+}
+.card > h3{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+.card > h2{
+    font-size: 3.2rem;
+}
+.card ul{
+    padding-bottom: 3rem;
+}
+.card > ul li{
+    font-size: 1.8rem;
+    line-height: 260%;
+}
+.crd-btn{
+    font-size: 2rem;
+    line-height: 120%;
+}
+}
+
+
 /* ====================================
 Footer
 ====================================== */
 .footer-sct{
-    width: 100%;
+    background: var(--clr-primary-grey);
+    bottom: 0;
     height: 58.4rem;
     padding: 2rem 0;
-    background: var(--clr-primary-grey);
     position: relative;
-    bottom: 0;
+    width: 100%;
 }
 .rows-container{
-    place-content: center;
     grid-template-columns: repeat(3, 1fr);
+    place-content: center;
 }
 .row1-fter,
 .row3-fter{
@@ -1046,14 +1209,14 @@ Footer
 /* Footer typography */
 /* Row 1 */
 .row1-fter > h4{
-    text-transform: uppercase;
     font-size: 1.8rem;
     padding-bottom: 2rem;
+    text-transform: uppercase;
 }
 .row1-fter > a{
     font-size: 4rem;
-    text-decoration: underline;
     line-height: 200%;
+    text-decoration: underline;
 }
 /* Row 2 */
 .row2-fter > h3{
@@ -1064,11 +1227,11 @@ Footer
     padding: 3rem 0;
 }
 .row2-fter > ul a{
+    color: var(--clr-primary-black);
     font-size: 1.6rem;
     font-weight: 700;
-    text-transform: uppercase;
     line-height: 320%;
-    color: var(--clr-primary-black);
+    text-transform: uppercase;
 }
 .row2-fter > ul a:hover{
     opacity: .6;
@@ -1081,15 +1244,15 @@ Footer
 }
 .fter-tpArrow{
     background-color: transparent;
-    outline: none;
     border: 0;
+    outline: none;
 }
 .fter-tpArrow i{
-    color: var(--clr-primary-purple);
-    font-size: 3rem;
-    cursor: pointer;
-    transition: all .3s ;
     animation: jump 1s cubic-bezier(0,0,.58,1.64) infinite;
+    color: var(--clr-primary-purple);
+    cursor: pointer;
+    font-size: 3rem;
+    transition: all .3s ;
 }
 /* Jump animation */
 @keyframes jump{
@@ -1107,8 +1270,8 @@ Footer
     padding-top: 4rem;
 }
 .footer-footer{
-    justify-content: space-between;
     align-items: flex-end;
+    justify-content: space-between;
 }
 /* Footer Icons */
 .scI-cRighter .ctx-icons{
@@ -1126,8 +1289,8 @@ Footer
 }
 .copyright{
     font-size: 2rem;
-    line-height: 200%;
     font-weight: 500;
+    line-height: 200%;
 }
 /* Footer Media query */
 @media (width < 957px){
@@ -1161,13 +1324,11 @@ Footer
 }
 .fter-tpArrow{
     background-color: transparent;
-    outline: none;
     border: 0;
+    outline: none;
 }
 .fter-tpArrow i{
     font-size: 2.8rem;
-    /* position: fixed;
-    bottom: 15rem; */
     right: 1rem;
 }
 .row3-fter p{
@@ -1184,9 +1345,9 @@ Footer
 }
 /* ================= */
 .footer-footer{
+    align-items: flex-start;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
 }
 .scI-cRighter .ctx-icons{
     justify-content: flex-start;

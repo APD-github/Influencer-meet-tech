@@ -218,21 +218,27 @@ NavBar
     border-radius: 10px;
     transform: translate(-40%);
     margin-top: 3rem;
-    margin-left: -3.5rem;
-    transition: .3s cubic-bezier(0.77, 0, 0.175, 1);
+    margin-left: -3rem;
+    transition: .3s;
 }
 .sub-lists a > li:hover::after{
-    width: 9rem;
+    width: 6rem;
+}
+
+.sub-lists a > li.list-2:hover::after{
+    margin-left: -3.6rem;
+    width: 7rem;
 }
 .sub-lists a > li.list-3:hover::after,
 .sub-lists a > li.list-4:hover::after{
     width: 11rem;
+    width: 9rem;
 }
 .sub-lists a > li.list-3:hover::after{
     margin-left: -5.3rem;
 }
 .sub-lists a > li.list-4:hover::after{
-    margin-left: -4.9rem;
+    margin-left: -4.8rem;
 }
 /* Nav Onscroll */
 .onscroll.nav{
@@ -242,6 +248,7 @@ NavBar
 }
 .onscroll .sub-lists a > li{
     color: var(--clr-primary-white);
+    transition: var(--transition);
 }
 .onscroll .sub-lists a > li::after{
     background: var(--clr-primary-white);
@@ -279,9 +286,15 @@ NavBar
     width: 100%;
     z-index: -30;
 }
+/* List style hover effects */
+.sub-lists a > li::after{
+    height: 0;
+}
+.sub-lists a > li:hover{
+    opacity: .7;
+}
 /* Toggle Bar */
 .toggle-bar{
-    /* animation: bounce 1s infinite; */
     background: transparent;
     border: 0;
     cursor: pointer;
@@ -498,15 +511,16 @@ Speakers
 .ctr-txt > h1{
     font-size: 6.4rem;
     color: var(--clr-header-brown);
-    line-height: 7.2rem;
+    line-height: 150%;
     padding-bottom: 3rem;
-    width: 90.18rem;
+    width: 97.18rem;
+    font-family: 'Maison Neue', sans-serif;
 }
 .underline{
     background: var(--clr-header-brown);
 }
 .ctr-txt > p{
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     line-height: 6rem;
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -528,8 +542,20 @@ Speakers
 .cards-ctx{
     width: 100%;
 }
+.crd-hd:hover .overlay{
+    height: 34.4rem;
+}
+.crd-hd > .overlay{
+    transition: var(--transition);
+    position: absolute;
+    height: 0;
+    width: 40.8rem;
+    z-index: 1;
+    background: hsla(0, 0%, 0%, 0.358);
+}
 .crd-hd > img{
     width: 40.8rem;
+    transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .bg-purple{
     background: var(--clr-primary-purple);
@@ -556,7 +582,7 @@ Speakers
 }
 .crd-hd > h4{
     font-size: 2.5rem;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     line-height: 4rem;
 }
 .crd-hd > h2{
@@ -570,9 +596,17 @@ Speakers
     line-height: 4.8rem;
 }
 /* Media queries */
+@media (width <= 1105px){
+.ctr-txt > h1{
+    font-size: 4.4rem;
+    line-height: 120%;
+    padding-bottom: 3rem;
+    width: 100%;
+}
+}
 @media (width <= 768px){
 .ctr-txt > h1{
-    font-size: 2.4rem;
+    font-size: 2.7rem;
     line-height: 180%;
     padding-bottom: 1rem;
     width: 100%;
@@ -582,8 +616,36 @@ Speakers
     line-height: 180%;
 }
 .ctr-txt > h3{
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     line-height: 180%;
+}
+.crd-hd:hover .overlay{
+    height: 19.27rem;
+}
+.crd-hd > img,
+.crd-hd > .overlay{
+    width: 22.8rem;
+}
+.bSub-tag{
+    font-size: 1.2rem;
+    width: 8.4rem;
+    height: 3.2rem;
+    margin: 1.5rem 0 0 1.5rem;
+} 
+.crd-hd{
+    padding: 1rem 0;
+}
+.crd-hd > h4{
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+}
+.crd-hd > h2{
+    font-size: 2rem;
+    line-height: 4rem;
+}
+.crd-hd > p{
+    font-size: 1.4rem;
+    line-height: 1.96rem;
 }
 }
 

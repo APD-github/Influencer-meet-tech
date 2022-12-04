@@ -1059,8 +1059,8 @@ Convinced!
 }
 .card{
     border-radius: 3px;
-    height: 66.2rem;
-    padding: 3.5rem 5rem;
+    height: 58.2rem;
+    padding: 3rem 5rem;
 }
 .card > h3{
     font-size: 4rem;
@@ -1070,7 +1070,7 @@ Convinced!
     text-transform: uppercase;
 }
 .card > h2{
-    font-size: 6.4rem;
+    font-size: 5.4rem;
     font-weight: 700;
     line-height: 120%;
     text-transform: capitalize;
@@ -1084,7 +1084,7 @@ Convinced!
 .card ul{
     color: var(--clr-primary-black);
     padding-bottom: 3rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 .card2 ul > span i{
     color: var(--clr-darkend-green);
@@ -1098,7 +1098,7 @@ Convinced!
 }
 .card > ul li{
     font-size: 2rem;
-    line-height: 260%;
+    line-height: 230%;
 }
 .crd-btn{
     font-size: 2rem;
@@ -1113,7 +1113,7 @@ Convinced!
 /* Convinced media query */
 @media (width <= 994px){
 .card{
-    height: 60rem;
+    height: 54rem;
     padding: 3rem 2rem;
 }
 .ctx-convinced > h1{
@@ -1153,8 +1153,8 @@ Convinced!
     grid-template-columns: repeat(1, 1fr);
 }
 .card{
-    height: 57.5rem;
-    padding: 5rem 2rem;
+    height: 56.5rem;
+    padding: 3rem 2rem;
     text-align: center;
 }
 .card > h3,
@@ -1162,17 +1162,17 @@ Convinced!
     text-align: center;
 }
 .card > h3{
-    font-size: 3rem;
+    font-size: 3.8rem;
     padding-bottom: 1rem;
 }
 .card > h2{
-    font-size: 3.2rem;
+    font-size: 3.7rem;
 }
 .card ul{
     padding-bottom: 3rem;
 }
 .card > ul li{
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     line-height: 260%;
 }
 .crd-btn{

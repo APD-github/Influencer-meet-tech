@@ -383,6 +383,7 @@ Hero
 .hero{
     min-height: 100vh;
     width: 100%;
+    overflow-x: hidden;
 }
 .ctx-hero{
     align-items: center;
@@ -543,7 +544,8 @@ Hero
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
-    padding: 0;
+    padding: 0 1rem;
+    width: 100%;
 }
 .txt-hero{
     width: 40rem;
@@ -564,7 +566,7 @@ Hero
     width: 30.5rem;
 }
 .hero-img2{
-    left: 3rem;
+    left: 0;
     position: absolute;
     right: 0;
     top: -5rem;
@@ -603,7 +605,7 @@ About
     align-items: center;
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
-    border: 2px solid #7D00EB;
+    border: 2px solid hsl(272, 100%, 46%);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

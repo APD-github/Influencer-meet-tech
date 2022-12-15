@@ -71,6 +71,17 @@ body::-webkit-scrollbar{
     border-radius: 50%;
     background: var(--clr-darker-grey);
 }
+.pinkBg-txt{
+    background-color: var(--clr-primary-pink);
+    width: 22rem;
+    height: 10rem;
+    padding: 1rem 2rem;
+    letter-spacing: 1.5px;
+    transform: rotate(270deg);
+    margin: auto;
+    position: absolute;
+    left: 4.5rem;
+}
 /* General styles media queries */
 @media (width >= 1820px){
 /* body{
@@ -226,8 +237,8 @@ NavBar
 }
 
 .sub-lists a > li.list-2:hover::after{
-    margin-left: -3.6rem;
-    width: 7rem;
+    margin-left: -4.5rem;
+    width: 9rem;
 }
 .sub-lists a > li.list-3:hover::after,
 .sub-lists a > li.list-4:hover::after{
@@ -366,8 +377,213 @@ NavBar
         transform: scale(1);
     }
 }
+/* ==============================================
+Hero
+============================================== */
+.hero{
+    min-height: 100vh;
+    width: 100%;
+}
+.ctx-hero{
+    align-items: center;
+    gap: 3rem;
+    justify-content: center;
+    padding: 5rem 25rem;
+    width: 100%;
+}
+.txt-hero{
+    position: relative;
+    width: 59rem;
+}
+.txt-hero .mobile-txt{
+    display: none;
+}
+.arrow-bg{
+    display: block;
+}
+.hero-text > img{
+    height: 64.2rem;
+    margin-top: -7rem;
+    width: 65.6rem;
+}
+.image-hero{
+    position: relative;
+}
+.arrow-bg{
+    left: -13rem;
+    position: absolute;
+    top: 30rem;
+}
+.heroBg-pink{
+    background-color: var(--clr-primary-pink);
+    border-radius: 5px;
+    height: 45.4rem;
+    position: relative;
+    transform: rotate(-10deg);
+    width: 45.5rem;
+    z-index: -1;
+}
+.hero-img1{
+    left: -14.8rem;
+    position: absolute;
+    top: -8rem;
+}
+.hero-img1 > img{
+    width: 35rem;
+}
+.hero-img2{
+    position: absolute;
+    right: -18rem;
+    top: 1rem;
+}
+.hero-img2 > img{
+    width: 43rem;
+}
+/* Stars bg */
+.stars-hero{
+    position: relative;
+    width: 100%;
+}
+.stars-hero > img.star2{
+    right: 0;
+}
+.stars-hero > img.star1{
+    padding-top: 15rem;
+}
+.stars-hero > img{
+    position: absolute;
+}
+/* Hero Footer */
+.hero-footer{
+    padding-top: 15rem;
+    text-align: center;
+}
+.hero-footer > h4{
+    color: var(--clr-primary-purple);
+    font-size: 2.4rem;
+    letter-spacing: 3px;
+    line-height: 120%;
+}
+.hero-footer > h2{
+    font-size: 4rem;
+    letter-spacing: 3px;
+    line-height: 160%;
+    padding-top: 3rem;
+    text-transform: none;
+}
+/* Hero Media queries! */
+@media (width <= 1098px){
+.ctx-hero{
+    gap: 1rem;
+    padding: 5rem 1rem;
+}
+.txt-hero{
+    width: 40rem;
+}
+.hero-text > img{
+    height: 64.2rem;
+    margin-top: -7rem;
+    width: 120%;
+}
+/* Swapping text images for mobile and desktop */
+.txt-hero .desktop-txt{
+    display: none;
+}
+.txt-hero .mobile-txt{
+    display: block;
+}
+.arrow-bg{
+    display: none;
+    left: -10rem;
+    top: 30rem;
+}
+.heroBg-pink{
+    height: 30.4rem;
+    transform: rotate(-13deg);
+    width: 30.5rem;
+}
+.hero-img1{
+    left: -14.8rem;
+    top: -15rem;
+}
+.hero-img1 > img{
+    width: 25rem;
+}
+.hero-img2{
+    position: absolute;
+    right: -18rem;
+    top: 1rem;
+}
+.hero-img2 > img{
+    width: 43rem;
+}
+/* Stars bg */
+.stars-hero{
+    flex-direction: column;
+    padding: 3rem 0;
+}
+.stars-hero > img.star1{
+   display: none;
+}
+/* Hero Footer */
+.hero-footer > h4{
+    font-size: 2.2rem;
+}
+.hero-footer > h2{
+    font-size: 2.6rem;
+}
+.hero-footer{
+    padding-top: 3rem;
+}
+}
 
-
+@media (width <= 768px){
+/* Hero Media queries! */
+.ctx-hero{
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0;
+}
+.txt-hero{
+    width: 40rem;
+}
+.hero-text > img{
+    height: fit-content;
+    margin-top: -4rem;
+    width: 100%;
+}
+.hero-img1{
+    display: none;
+}
+.heroBg-pink{
+    height: 33.4rem;
+    left: -3rem;
+    top: -8rem;
+    transform: rotate(-16deg);
+    width: 30.5rem;
+}
+.hero-img2{
+    left: 3rem;
+    position: absolute;
+    right: 0;
+    top: -5rem;
+    z-index: -1;
+}
+.hero-img2 > img{
+    width: 35rem;
+}
+.hero-footer{
+    padding-top: 8rem;
+}
+.hero-footer > h4{
+    font-size: 2rem;
+}
+.hero-footer > h2{
+    font-size: 2.4rem;
+    line-height: 200%;
+}
+}
 /* ==============================================
 About
 ============================================== */

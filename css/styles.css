@@ -554,6 +554,7 @@ Hero
     height: fit-content;
     margin-top: -4rem;
     width: 100%;
+    padding: 0 1rem;
 }
 .hero-img1{
     display: none;

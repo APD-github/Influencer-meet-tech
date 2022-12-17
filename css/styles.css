@@ -381,7 +381,7 @@ NavBar
 Hero
 ============================================== */
 .hero{
-    min-height: 100vh;
+    /* min-height: 100vh; */
     width: 100%;
     overflow: hidden;
 }
@@ -596,6 +596,8 @@ Hero
 About
 ============================================== */
 #abt-us{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
     height: fit-content;
     width: 100%;
 }
@@ -723,14 +725,15 @@ About
     font-size: 2.5rem;
 }
 }
-
 /* =============================================== 
 Speakers 
 =============================================== */
 .speaker-sect{
     width: 100%;
+    height: f0-content;
     background: var(--clr-light-grey);
-    padding: 5rem 0;
+    padding: 8rem 0;
+    cursor: all-scroll;
 }
 .ctr-txt > h1{
     font-size: 6.4rem;
@@ -756,8 +759,9 @@ Speakers
 }
 /* Cards */
 .cards-slider{
-    gap: 3rem;
-    overflow: auto;
+    height: fit-content;
+    gap: 0 3rem;
+    overflow-y: auto;
     position: relative;
 }
 .cards-slider::-webkit-scrollbar{
@@ -767,15 +771,27 @@ Speakers
     width: 100%;
 }
 .cards-slider > .card:hover .overlay{
+    animation: showOverlay .4s linear;
+    display: block;
     height: 34.4rem;
 }
 .crd-hd > .overlay{
-    transition: var(--transition);
-    position: absolute;
+    background: hsla(0, 0%, 0%, 0.358);
+    display: none;
     height: 0;
+    position: absolute;
+    transition: var(--transition);
     width: 40.8rem;
     z-index: 1;
-    background: hsla(0, 0%, 0%, 0.358);
+}
+/* Overlay Animation for speakers hover effect */
+@keyframes showOverlay{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 .crd-hd > img{
     width: 40.8rem;
@@ -829,6 +845,10 @@ Speakers
 }
 }
 @media (width <= 768px){
+.speaker-sect{
+    height: fit-content;
+    padding: 3rem 0 0 0;
+}
 .ctr-txt > h1{
     font-size: 2.7rem;
     line-height: 180%;
@@ -843,8 +863,8 @@ Speakers
     font-size: 1.9rem;
     line-height: 180%;
 }
-.crd-hd:hover .overlay{
-    height: 19.27rem;
+.cards-slider > .card:hover .overlay{
+    height: 19.3rem;
 }
 .crd-hd > img,
 .crd-hd > .overlay{
@@ -873,10 +893,13 @@ Speakers
 }
 }
 
+
 /* ===========================================
 Organizer
 =========================================== */
 .organizers{
+    padding-top: 10rem;
+    padding-bottom: 5rem;
     height: fit-content;
     width: 100%;
 }
@@ -885,8 +908,8 @@ Organizer
     grid-template-columns: repeat(2, 1fr);
 }
 .orgz-hdtx img{
-    margin-left: 48rem;
     position: absolute;
+    right: -4rem;
 }
 .orgz-cad{
     background: var(--clr-dark-grey);
@@ -897,6 +920,7 @@ Organizer
     justify-content: space-evenly;
     padding: 0 4rem;
     width: 60rem;
+    position: relative;
 }
 /* Organizers action btns */
 .orgz-btn2,
@@ -965,9 +989,6 @@ Organizer
 .orgz-container{
     gap: 1rem 5rem;
 }
-.orgz-hdtx img{
-    margin-left: 45rem;
-}
 }
 /* Medium large screen */
 @media (width <= 1358px){
@@ -982,9 +1003,6 @@ Organizer
 }
 }
 @media (width <= 1323px){
-.orgz-hdtx img{
-    margin-left: 34rem;
-}
 .orgz-cad{
     height: 48.64rem;
     padding: 0 3rem;
@@ -1022,11 +1040,16 @@ Organizer
     width: 40rem;
 }
 .orgz-hdtx img{
-    margin-left: 25rem;
+    right: 14rem;
+    margin-top: -3rem;
 }
 }
 /* Mobile large screen */
 @media (width <= 768px){
+.organizers{
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
 .orgz-container{
     gap: 5rem 0;
     grid-template-columns: 1fr;
@@ -1038,7 +1061,7 @@ Organizer
     width: 100%;
 }
 .orgz-hdtx img{
-    margin-left: 23rem;
+    right: 14rem;
     margin-top: -3rem;
 }
 /* action btns media query */
@@ -1081,8 +1104,8 @@ Organizer
 /* Orgz mobile arrow down btn */
 @media (width <= 316px){
 .orgz-hdtx img{
-    margin-left: 18rem;
-    margin-top: -1rem;
+    right: -1rem;
+    margin-top: -3rem;
 }
 }
 /* bg to orgz-ctx media query */
@@ -1129,10 +1152,28 @@ Organizer
     margin-top: 52rem;
 }
 }
+/* Organziers arrow btn retouch */
+@media (width <= 1240px){
+.orgz-hdtx img{
+    right: -1rem;
+    margin-top: 1rem;
+}
+}
+@media (width <= 768px){
+.orgz-hdtx img{
+    right: none;
+    left: 23rem;
+    margin-top: -2rem;
+}
+}
+
+
 /* =========================================
 Sponsors
 =========================================  */
 .sponsors{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
     height: fit-content;
     width: 100%;
 }
@@ -1214,6 +1255,10 @@ Sponsors
 }
 /* Medi query Mobiles */
 @media (width <= 524px){
+.sponsors{
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+}
 .container-logos{
     grid-template-columns: repeat(3, 1fr);
     height: 28.14rem;
@@ -1248,6 +1293,8 @@ Sponsors
 Convinced!
 ====================================== */
 .convinced{
+    padding-top: 3rem;
+    padding-bottom: 10rem;
     width: 100%;
 }
 .ctx-convinced{
@@ -1273,11 +1320,11 @@ Convinced!
     grid-template-columns: repeat(2, 1fr);
     place-content: center;
 }
-.card1{
+.tableCard1{
     background: var(--clr-light-grey);
     border-top: 3px solid #7D00EB;
 }
-.card2{
+.tableCard2{
     background: var(--clr-dark-grey);
     border-top: 3px solid #267A96;
 }
@@ -1365,6 +1412,10 @@ Convinced!
 }
 }
 @media (width <= 768px){
+.convinced{
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
 .ctx-convinced > h1{
     font-size: 3.5rem;
 }
@@ -1582,5 +1633,34 @@ Footer
 }
 .rows-container{
     grid-template-columns: repeat(1, 1fr);
+}
+}
+
+
+
+/* Larger Screens (TV's and max-wider screen) */
+@media (width > 2050px){
+.nav,
+.hero,
+#abt-us, 
+.speaker-sect,
+.organizers,
+.sponsors,
+.convinced,
+#footer{
+    display: grid;
+    place-content: center;
+}
+.orgz-container{
+    gap: 1rem 10rem;
+}
+.orgz-cad{
+    height: 80.64rem;
+    padding: 0 10rem;
+    width: 100%;
+}
+/* Navbar XXlarg screens */
+.nav{
+    gap: 0 50rem;
 }
 }

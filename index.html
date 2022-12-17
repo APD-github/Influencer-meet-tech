@@ -20,7 +20,7 @@
     <!-- Javascript -->
     <script src="./javascript/index.js" defer></script>
     <!-- Links to new tab -->
-    <base target="_blank" />
+    <!-- <base target="_blank" /> -->
     <title></title>
 </head>
 <body>
@@ -41,10 +41,10 @@ NavBar
 
         <div class="nav-lists flx">
             <ul class="sub-lists flx">
-                <a href="#" style="animation-delay: .2s;"><li class="list">About</li></a>
-                <a href="#" style="animation-delay: .4s;"><li class="list list-2">Speakers</li></a>
-                <a href="#" style="animation-delay: .6s;"><li class="list list-3">organizers</li></a>
-                <a href="#" style="animation-delay: .8s;"><li class="list list-4">Sponsors</li></a>
+                <a href="#abt-us" style="animation-delay: .2s;"><li class="list">About</li></a>
+                <a href="#speakers" style="animation-delay: .4s;"><li class="list list-2">Speakers</li></a>
+                <a href="#organizers" style="animation-delay: .6s;"><li class="list list-3">organizers</li></a>
+                <a href="#sponsors" style="animation-delay: .8s;"><li class="list list-4">Sponsors</li></a>
             </ul>
             <a href="#" class="nav-tct action-btn">
                 Buy ticket
@@ -106,6 +106,7 @@ HERO!
         </footer>
     </section>
 
+
  <!-- ====================================== 
     About
 ====================================== -->
@@ -145,12 +146,13 @@ HERO!
                 </div>
             </div>
         </div>
-    </article>    
+    </article>
+
 
 <!-- ==========================================
 Speakers
 =========================================== -->
-    <article class="speaker-sect">
+    <article id="speakers" class="speaker-sect">
         <div class="speaker-ctr">
             <div class="ctr-txt rsv-ct">
                 <h1>
@@ -240,6 +242,7 @@ Speakers
         </div>
     </article>
 
+
 <!-- ======================================== 
 Organizers
 ======================================== -->
@@ -310,10 +313,11 @@ Organizers
       </div>
   </article>
 
+
 <!-- =========================================
     Sponsors
 ========================================= -->
-     <article class="rsv-ct sponsors">
+     <article id="sponsors" class="rsv-ct sponsors">
         <div class="container-sponsors">
             <div class="sponsors-headline">
                 <h1>
@@ -398,7 +402,7 @@ Organizers
         </div>
      </article>
 
-
+    
 <!-- ====================================
 Convinced!
 ======================================  -->
@@ -409,7 +413,7 @@ Convinced!
             <!-- Pricing cards -->
             <article class="price-cards grd">
                 <!-- Card 1 -->
-                <div class="card card1">
+                <div class="card card1 tableCard1">
                     <h3>In-person</h3>
                     <h2 class="stroked">n1500</h2>
                     <!-- Card package Lists -->
@@ -452,7 +456,7 @@ Convinced!
                     </a>
                 </div>
                 <!-- Card 2 -->
-                <div class="card card2">
+                <div class="card card2 tableCard2">
                     <h3 class="stroked">Online</h3>
                     <h2>FREE</h2>
                     <!-- Card package Lists -->
@@ -497,6 +501,7 @@ Convinced!
             </article>
         </div>
     </section>
+
 
 <!-- ==========================================
 Footer

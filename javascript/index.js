@@ -26,5 +26,6 @@ window.addEventListener('scroll', () => {
 // Jump to Top
 let jumpBtn = document.querySelector('.jump-btn');
 jumpBtn.addEventListener('click', () => {
-    console.log(document.body)
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 });

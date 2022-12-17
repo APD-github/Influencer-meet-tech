@@ -567,9 +567,7 @@ Hero
 }
 /* HERO IMAGE */
 .hero-image > .glasses-img{
-    left: 5rem;
-    top: -7rem;
-    width: 20rem;
+    display: none;
 }
 .hero-image > .background{
     height: 35.4rem;
@@ -606,10 +604,6 @@ Hero
 .hero-image{
     padding: 0 1rem;
 }
-.hero-image > .glasses-img{
-    top: -7rem;
-    width: 18rem;
-}
 .hero-image > .background{
     width: 30.4rem;
 }
@@ -622,9 +616,6 @@ Hero
 }
 }
 @media (width <= 394px){
-.hero-image > .glasses-img{
-    width: 15rem;
-}
 .hero-image > .background{
     width: 25.4rem;
 }

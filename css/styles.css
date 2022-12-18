@@ -135,7 +135,7 @@ Loader Animation
     z-index: 30;
 }
 .remove-loader{
-    top: -100vh;
+    top: -200vh;
 }
 .balls{
     height: 35px;
@@ -502,8 +502,9 @@ Hero
 .hero-footer h2{
     font-size: 4.4rem;
     letter-spacing: 1px;
-    line-height: 5.3rem;
+    line-height: 6.3rem;
     padding-top: 1rem;
+    font-weight: 500;
 }
 /* Hero Media query */
 @media (width <= 1475px){
@@ -685,14 +686,19 @@ About
 }
 .container-icon > .hr-efct{
     background: var(--clr-bghover-color);
-    height: 0;
+    display: none;
     position: absolute;
     transition: .3s ease;
+    text-align: center;
 }
 .container-icon:hover > .hr-efct{
     height: 5rem;
+    width: 5rem;
+    display: block;
+    animation: showOverlay .4s linear;
 }
 .ctx-icons{
+    text-align: center;
     display: flex;
     font-size: 3rem;
     gap: 2rem;
@@ -713,15 +719,12 @@ About
 }
 .container-icon:hover > .hr-efct{
     height: 3rem;
+    width: 3rem;
 }
 }
 @media (width <= 768px){
 .ctx-icons{
-    font-size: 2rem;
     gap: 1rem;
-}
-.container-icon:hover > .hr-efct{
-    height: 3rem;
 }
 }
 /* Tablet responsive */

@@ -19,9 +19,11 @@
     <script src="https://kit.fontawesome.com/8af7e0a9b9.js" crossorigin="anonymous"></script>
     <!-- Javascript -->
     <script src="./javascript/index.js" defer></script>
-    <!-- Links to new tab -->
-    <!-- <base target="_blank" /> -->
-    <title></title>
+    <script src="./javascript/AOS.js" defer></script>
+    <!-- Animate on scroll style -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Title -->
+    <title>Influencers Meet Tech | Home page </title>
 </head>
 <body>
 <!-- ===========================================
@@ -46,7 +48,7 @@ NavBar
                 <a href="#organizers" style="animation-delay: .6s;"><li class="list list-3">organizers</li></a>
                 <a href="#sponsors" style="animation-delay: .8s;"><li class="list list-4">Sponsors</li></a>
             </ul>
-            <a href="#" class="nav-tct action-btn">
+            <a href="mailto:praiseabeti@gmail.com" class="nav-tct action-btn">
                 Buy ticket
                 <span class="arrow-up">
                     <i class="fa-solid fa-arrow-up"></i>
@@ -67,8 +69,8 @@ HERO!
     <section id="hero" class="hero rsv-ct">
         <div class="ctx-hero flx">
             <div class="hero-txt">
-                <h1>Influencers and Tech <br> Personalities<span class="purple-hero"> Meet</span></h1>
-                <p>
+                <h1 data-aos="fade-down">Influencers and Tech <br> Personalities<span class="purple-hero"> Meet</span></h1>
+                <p data-aos="flip-up">
                     Influencer meet tech is a meeting held once every two years, for the purpose of re-uniting tech enthusiast and also to guide aspiring tech enthusiast's.  
                 </p>
                 <span class="hero-btns">
@@ -76,7 +78,7 @@ HERO!
                     <a href="sms:09053327214"><button class="lght-btn">link up</button></a>
                 </span>
             </div>
-            <div class="hero-image">
+            <div class="hero-image" data-aos="zoom-in">
                 <img loading="lazy" src="./images/glasses.svg" alt="glass" class="glasses-img">
                 <div class="background"></div>
                 <img loading="lazy" src="./images/audience.jpg" alt="audience" class="audience-img">
@@ -84,15 +86,15 @@ HERO!
         </div>
         <!-- Background stars -->
             <!-- Star 1 -->
-        <span class="stars-hero flx">
+        <span class="stars-hero flx"  data-aos="zoom-in">
             <img class="star1" loading="lazy" src="./images/star2.svg" alt="star.svg">
             <!-- Star 2 -->
             <img class="star2" loading="lazy" src="./images/star1.svg" alt="star.svg">
         </span>
 
         <footer class="hero-footer">
-            <h4>WHAT IS IMTCONF?</h4>
-            <h2>We are a Community of Influencers and Tech Personalities</h2>
+            <h4 data-aos="zoom-in-down">WHAT IS IMTCONF?</h4>
+            <h2 data-aos="zoom-in">We are a Community of Influencers and Tech Personalities</h2>
         </footer>
     </section>
 
@@ -103,11 +105,11 @@ HERO!
     <article id="abt-us" class="rsv-ct">
         <div class="container-abt grd">
             <div class="txt-subtitles">
-                <h4 class="pTxt-clrd tt-upc">Human-centered community</h4>
-                <h1>We are <br><span class="pTxt-clrd underlined">Designers</span></h1>
+                <h4 class="pTxt-clrd tt-upc" data-aos="zoom-out">Human-centered community</h4>
+                <h1 data-aos="zoom-in">We are <br><span class="pTxt-clrd underlined">Designers</span></h1>
             </div>
             <div class="ctx-abt">
-                <p>A community of Influencers and Tech Personalities forging a stage where the continent's brightest minds meet new patners, and the sharpest innovators to share their visions.</p>
+                <p data-aos="flip-down">A community of Influencers and Tech Personalities forging a stage where the continent's brightest minds meet new patners, and the sharpest innovators to share their visions.</p>
     
                 <div class="ctx-footer">
                     <div class="icon">
@@ -145,25 +147,32 @@ Speakers
     <article id="speakers" class="speaker-sect">
         <div class="speaker-ctr">
             <div class="ctr-txt rsv-ct">
-                <h1>
+                <h1 data-aos="zoom-in">
                     <span class="stroked">Here </span>are some <span class="stroked">of the people</span> <span class="rdc-ftweight">making our</span> dreams work.
                 </h1>
                 <div class="underline"></div>
-                <p>
+                <p data-aos="flip-down">
                     Dreams are not possible without people bringing them to life and here are the people helping us bring the IMTConf dream to life. We have carefully chosen amazing speakers who are a force to reckon with in the tech space.
                 </p>
 
-                <h3>Here's what they've been working on:</h3>
+                <h3 data-aos="zoom-in">Here's what they've been working on:</h3>
             </div>
             <!-- cards Container Scroller -->
             <div class="cards-ctx">
                 <!-- cards slide -->
                 <section class="cards-slider flx rsv-ct">
                     <!-- Card 1 -->
-                    <div class="card card1">
+                    <div class="card card1" data-aos="zoom-in">
                         <!-- Card header -->
                         <header class="crd-hd">
-                            <div class="overlay"></div>
+                            <div class="overlay">
+                                <a href="mailto:praiseabeti@gmail.com" class="action-btn">
+                                    Learn More
+                                    <span class="arrow-up">
+                                        <i class="fa-solid fa-arrow-up"></i>
+                                    </span>
+                                </a>
+                            </div>
                             <span class="bSub-tag bg-purple">Tech</span>
                             <img loading="lazy" src="./images/samson Goddy.svg" alt="samson Goddy photo">
                         </header>
@@ -177,10 +186,17 @@ Speakers
                         </footer>
                     </div>
                     <!-- Card 2 -->
-                    <div class="card card2">
+                    <div class="card card2" data-aos="zoom-out">
                         <!-- Card header -->
                         <header class="crd-hd">
-                            <div class="overlay"></div>
+                            <div class="overlay">
+                                <a href="mailto:praiseabeti@gmail.com" class="action-btn">
+                                    Learn More
+                                    <span class="arrow-up">
+                                        <i class="fa-solid fa-arrow-up"></i>
+                                    </span>
+                                </a>
+                            </div>
                             <span class="bSub-tag bg-yellow">Influencer</span>
                             <img loading="lazy" src="./images/dynasty.svg" alt="Dynasy photo">
                         </header>
@@ -194,10 +210,17 @@ Speakers
                         </footer>
                     </div>
                     <!-- Card 3 -->
-                    <div class="card card3">
+                    <div class="card card3" data-aos="zoom-in">
                         <!-- Card header -->
                         <header class="crd-hd">
-                            <div class="overlay"></div>
+                            <div class="overlay">
+                                <a href="mailto:praiseabeti@gmail.com" class="action-btn">
+                                    Learn More
+                                    <span class="arrow-up">
+                                        <i class="fa-solid fa-arrow-up"></i>
+                                    </span>
+                                </a>
+                            </div>
                             <span class="bSub-tag bg-purple">Tech</span>
                             <img loading="lazy" src="./images/mr heeleriouz.svg" alt="Mr.Heelariouz photo">
                         </header>
@@ -211,10 +234,17 @@ Speakers
                         </footer>
                     </div>
                     <!-- Card 4 -->
-                    <div class="card card4">
+                    <div class="card card4" data-aos="zoom-out">
                         <!-- Card header -->
                         <header class="crd-hd">
-                            <div class="overlay"></div>
+                            <div class="overlay">
+                                <a href="mailto:praiseabeti@gmail.com" class="action-btn">
+                                    Learn More
+                                    <span class="arrow-up">
+                                        <i class="fa-solid fa-arrow-up"></i>
+                                    </span>
+                                </a>
+                            </div>
                             <span class="bSub-tag bg-yellow">influencer</span>
                             <img loading="lazy" src="./images/samson Goddy.svg" alt="Samson Goddy photo">
                         </header>
@@ -240,8 +270,11 @@ Organizers
       <div class="orgz-container grd">
           <div class="orgz-cad">
               <span class="orgz-hdtx">
-                  <h3>Meet The</h3>
-                  <h1>Organizers</h1>
+                  <h3 data-aos="flip-left"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="2000">Meet The</h3>
+                  <h1 data-aos="fade-up"
+                  data-aos-anchor-placement="top-bottom">Organizers</h1>
                   <picture>
                       <img loading="lazy" src="./images/arrow2.svg" alt="arrow icon" class="show-img">
                       <img loading="lazy" src="./images/arrow down.svg" alt="arrow icon" class="hidden-img">
@@ -257,14 +290,14 @@ Organizers
           </div>
           <!-- Organizers context -->
           <div class="orgz-ctx">
-              <h2>Andikan F. Bassey</h2>
+              <h2 data-aos="zoom-in">Andikan F. Bassey</h2>
               <span class="orgz-profile flx">
-                  <span class="bg-grey">
+                  <span class="bg-grey" data-aos="fade-up">
                       <img loading="lazy" src="./images/avarta1.svg" alt="product designer">
                   </span>
-                  <h3>Product Designer</h3>
+                  <h3 data-aos="fade-up">Product Designer</h3>
               </span>
-              <p>
+              <p data-aos="flip-up">
                   Andikan is one of the amazing creatives of KND. He has over 4 years of design experience and is currently creating design solutions as a freelancer. Want to know more about Andikan? Follow his socials!
               </p>
               <div class="avartas-container flx">
@@ -310,12 +343,12 @@ Organizers
      <article id="sponsors" class="rsv-ct sponsors">
         <div class="container-sponsors">
             <div class="sponsors-headline">
-                <h1>
+                <h1 data-aos="zoom-in">
                     Become a <br>
                     Sponsor
                 </h1>
 
-                <p>
+                <p data-aos="flip-down">
                     As a sponsor, we’re promising reach to thousands of people who are interested in your brand. What better way to get your brand in front of people.
                 </p>
 
@@ -398,14 +431,14 @@ Convinced!
 ======================================  -->
     <section id="convinced" class="convinced">
         <div class="ctx-convinced rsv-ct">
-            <h1>Convinced?</h1>
-            <h4>Let's get you a spot now</h4>
+            <h1 data-aos="flip-down">Convinced?</h1>
+            <h4 data-aos="zoom-in">Let's get you a spot now</h4>
             <!-- Pricing cards -->
             <article class="price-cards grd">
                 <!-- Card 1 -->
                 <div class="card card1 tableCard1">
-                    <h3>In-person</h3>
-                    <h2 class="stroked">n1500</h2>
+                    <h3 data-aos="zoom-in">In-person</h3>
+                    <h2 class="stroked" data-aos="zoom-out">n1500</h2>
                     <!-- Card package Lists -->
                     <ul>
                         <span class="flx">
@@ -447,8 +480,8 @@ Convinced!
                 </div>
                 <!-- Card 2 -->
                 <div class="card card2 tableCard2">
-                    <h3 class="stroked">Online</h3>
-                    <h2>FREE</h2>
+                    <h3 class="stroked" data-aos="zoom-in">Online</h3>
+                    <h2 data-aos="flip-down">FREE</h2>
                     <!-- Card package Lists -->
                     <ul>
                         <span class="flx">
@@ -503,7 +536,7 @@ Footer
             <div class="grd-ctr flx">
                 <div class="rows-container grd">
                     <div class="row1-fter">
-                        <h4>Want to know more?</h4>
+                        <h4 data-aos="flip-down">Want to know more?</h4>
                         <a href="#" class="action-btn">
                             Reach out
                             <span class="arrow-up">
@@ -513,8 +546,8 @@ Footer
                     </div>
                     <!-- Footer Row two -->
                     <div class="row2-fter">
-                        <h3>Who We Are</h3>
-                        <ul class="footer-list">
+                        <h3 data-aos="flip-down">Who We Are</h3>
+                        <ul class="footer-list" data-aos="zoom-in">
                             <a href="#">
                                 <li>About</li>
                             </a>
@@ -539,9 +572,9 @@ Footer
                     <!-- Footer Row three -->
                     <div class="row3-fter">
                         <div class="row3-hdr">
-                            <h3>A Product of KND</h3>
+                            <h3 data-aos="flip-down">A Product of KND</h3>
                         </div>
-                        <p>
+                        <p data-aos="zoom-in">
                             Kreative Next Door is a collective of digital creative building solutions for the community.
                         </p>
                     </div>
@@ -585,6 +618,11 @@ Footer
 <!-- ======================================================= -->
         </div>
     </footer>
+    <!-- Animate on scroll library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 <!-- ====================================================== -->
 </body>
 </html>

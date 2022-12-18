@@ -6,7 +6,7 @@ window.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         loaderBalls.classList.add('remove-ball');
         loader.classList.add('remove-loader');
-    }, 2500);
+    }, 2300);
 });
 
 // NavBar 

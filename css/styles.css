@@ -116,7 +116,7 @@ body::-webkit-scrollbar{
 }
 @media (width <= 317px){
 .rsv-ct{
-    padding: 2.4rem .7rem;
+    padding: 2.4rem .2rem;
 }
 }
 /* ===================================
@@ -604,6 +604,7 @@ Hero
 /* Smaller Screens */
 @media (width <= 493px){
 .hero-image{
+    width: 100%;
     padding: 0 1rem;
 }
 .hero-image > .background{
@@ -618,11 +619,18 @@ Hero
 }
 }
 @media (width <= 394px){
+.hero-image{
+    width: 100%;
+    padding: 0 1rem;
+    display: grid;
+    place-content: center;
+}
 .hero-image > .background{
     width: 25.4rem;
 }
 .hero-image > .audience-img{
-    width: 27.3rem;
+    width: 93%;
+    margin-inline: auto;
 }    
 }
 /* ==============================================
@@ -633,8 +641,10 @@ About
     padding-bottom: 8rem;
     height: fit-content;
     width: 100%;
+    overflow-x: hidden;
 }
 .container-abt{
+    width: 100%;
     grid-template-columns: repeat(2, 1fr);
     margin: 4.5rem 0;
 }
@@ -747,6 +757,10 @@ About
 .container-abt{
     grid-template-columns: 1fr;
 }
+.txt-subtitles,
+.ctx-abt{
+    width: 100%;
+}
 .txt-subtitles{
     border-bottom-left-radius: 0px;
     border-top-right-radius: 5px;
@@ -793,9 +807,10 @@ Speakers
 }
 /* Cards */
 .cards-slider{
-    height: fit-content;
+    height: 68rem;
     gap: 0 3rem;
-    overflow-y: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
     position: relative;
 }
 .cards-slider::-webkit-scrollbar{
@@ -831,12 +846,8 @@ Speakers
 }
 /* Overlay Animation for speakers hover effect */
 @keyframes showOverlay{
-    0%{
-        transform: scale(0);
-    }
-    100%{
-        transform: scale(1);
-    }
+    0%{transform: scale(0);}
+    100%{transform: scale(1);}
 }
 .crd-hd > img{
     width: 40.8rem;
@@ -908,6 +919,10 @@ Speakers
     font-size: 1.9rem;
     line-height: 180%;
 }
+.cards-slider{
+    height: 43rem;
+    overflow-y: hidden;
+}
 .cards-slider > .card:hover .overlay{
     height: 19.3rem;
 }
@@ -947,6 +962,7 @@ Organizer
     padding-bottom: 5rem;
     height: fit-content;
     width: 100%;
+    position: relative;
 }
 .orgz-container{
     gap: 1rem 19rem;
@@ -1194,7 +1210,7 @@ Organizer
 }
 @media (width <= 280px){
 .orgz-btn{
-    margin-top: 52rem;
+    margin-top: 55rem;
 }
 }
 /* Organziers arrow btn retouch */
@@ -1708,4 +1724,31 @@ Footer
 .nav{
     gap: 0 50rem;
 }
+}
+
+/* Very Small screens */
+@media (width <= 324px){
+/* Hero Btns */
+.hero-btns > a button{
+    font-size: 1.2rem;
+    width: 13rem;
+}
+/* Organizers arrow */
+.org-arrows{
+    display: none;
+}
+/* About us inner container */
+.txt-subtitles,
+.ctx-abt{
+    width: 91%;
+    margin-inline: auto;
+}
+}
+@media (width <= 290px){
+/* About us inner container */
+.txt-subtitles,
+.ctx-abt{
+    margin-left: 0rem;
+    margin-right: 0;
+}    
 }
